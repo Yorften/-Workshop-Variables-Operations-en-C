@@ -1,5 +1,7 @@
 {
     "files.associations": {
-        "challenge3.C": "cpp"
+        "challenge3.C": "cpp",
+        "cmath": "c",
+        "math.h": "c"
     }
 }
