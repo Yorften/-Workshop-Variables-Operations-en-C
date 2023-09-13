@@ -1,6 +1,4 @@
 #include <stdio.h>
-#define _OPEN_SYS_ITOA_EXT
-
 int main(){
     int number;
     char inverse[3];
