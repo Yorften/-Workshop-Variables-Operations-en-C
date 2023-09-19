@@ -43,7 +43,7 @@ void afficherStudent(void){
     int i;
     for (i = 0; i < student_id; i++)
     {
-        printf("| %12s | %12s | %2d-%2d-%4d |\n",T[i].nom,T[i].prenom,T[i].date.j,T[i].date.m,T[i].date.a);
+        printf("\t\t| %12s | %12s | %2d-%2d-%4d |\n",T[i].nom,T[i].prenom,T[i].date.j,T[i].date.m,T[i].date.a);
     }
     
 
