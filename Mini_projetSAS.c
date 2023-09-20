@@ -5,7 +5,7 @@
 
 
 struct Date {
-    int j,m,a;
+ int j,m,a;
 };
 struct apprenants {
     char nom[100];
@@ -43,7 +43,7 @@ void afficherStudent(void){
     int i;
     for (i = 0; i < student_id; i++)
     {
-        printf("\t\t| %12s | %12s | %2d-%2d-%4d |\n",T[i].nom,T[i].prenom,T[i].date.j,T[i].date.m,T[i].date.a);
+        printf("\t\t| %12s | %10s | %2d-%2d-%4d |\n",T[i].nom,T[i].prenom,T[i].date.j,T[i].date.m,T[i].date.a);
     }
     
 
@@ -79,11 +79,11 @@ menu :
             printf("\t\t|     4- Quittez                         |\n");
             printf("\t\t+----------------------------------------+\n");
 
-                    do
-                    {
+                    saisir:
+                    
                         printf("Choix :");
                         scanf("%d", &c);
-                    } while (c <= 0 || c >= 5 );
+                     if (c <= 0 || c >= 5 ) goto saisir;
 
                         switch (c)
                         {
